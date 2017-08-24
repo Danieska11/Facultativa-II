@@ -10,32 +10,103 @@
     
 </head>
 <body>
-
-  
 <div class="navbar-fixed">
-  <nav class="grey darken-4">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Keylin</a>
-      <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Incio</a></li>
-        <li><a href="#">Servicio</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Noticia</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-menu">
-        <li><a href="#">Incio</a></li>
-        <li><a href="#">servicio</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Noticia</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<main class="Contenido">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ea distinctio, itaque, atque ullam quod fugiat aperiam illum a hic quasi dolores corporis labore quaerat aliquid deserunt voluptatem. Odit placeat quas, ipsa earum ea animi ratione, nam vitae dolorem nemo. Quos eum veniam mollitia in eius, sapiente voluptate autem maiores omnis qui corporis quaerat vel eos sit corrupti, tempora aliquid perferendis, recusandae minima. A quod distinctio rem placeat tenetur deleniti enim sapiente praesentium iste aut! Deserunt voluptatibus quae placeat, iure adipisci veritatis! Fugiat nulla veniam explicabo velit facere, eveniet itaque provident aut labore facilis beatae ducimus quo. Maiores, blanditiis, nisi.
-</main>
+    <nav class="grey darken-4">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">KEYLIN</a>
+        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Noticia</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-menu">
+         <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Noticia</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/imagen1.jpg" alt=""> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Etiquetas HTML</h3>
+          <h5 class="light grey-text text-lighten-3">Uso correcto de la semantica web.</h5>
+        </div>
+      </li>
+      <li>
+
+
+      <img src="http://lorempixel.com/580/250/nature/2" alt=""> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Propiedades CSS</h3>
+          <h5 class="light grey-text text-lighten-3">Diseño de estilo en cascadas</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3" alt=""> <!-- random image -->
+        <div class="caption right-align">
+          <h3>JavaScript</h3>
+          <h5 class="light grey-text text-lighten-3">Interactividad en nuestro sitio web</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4" alt=""> <!-- random image -->
+        <div class="caption center-align">
+          <h3>MaterializeCSS</h3>
+          <h5 class="light grey-text text-lighten-3">Responsividad y Adaptabilidad.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+<!--inicio del contenido (main)-->
+
+  <main>  <!--Creacion de secciones -->
+    <!--seccion servicio-->
+
+    <section class="row"> <!--dentro del row van las columnas-->
+
+      <h2 class="center-align blue-text">Servicio</h2>
+      <p class="center-align blue-text">Esto son servicio mas  poderoso   en la tienda  </p>
+
+     <article class='col s12 m4'>
+       <div class='icon-block'>
+         <h2 class='center light-blue-text'><img width='30%' src='img/iconos/computer.png' alt=''></h2>
+         <h5 class='center green-text'>Desarrollo web</h5>
+         <p class='light'>uso de Herramientas para el desarrollo utilizando HTML5 CSS3 javascript.</p>
+       </div>
+     </article>
+
+  <article class='col s12 m4'>  <!--segundo articulo-->
+       <div class='icon-block'>
+         <h2 class='center light-blue-text'><img width='30%' src='img/iconos/floppy.png' alt=''></h2>
+         <h5 class='center blue-text'>Responsividad</h5>
+         <p class='light'>Este  un sitio puede visualizar  en sitios moviles .</p>
+       </div>
+  </article>
+
+    <article class='col s12 m4'>  <!--tercer articulo-->
+       <div class='icon-block'>
+         <h2 class='center light-blue-text'><img width='30%' src='img/iconos/tablet.png' alt=''></h2>
+         <h5 class='center black-text'>Despliegue</h5>
+         <p class='light'>Utilizamos github para el despliegue del sitio web con una direccion que podemos comparir.</p>
+       </div>
+  </article>
+    </section>
+
+<!--segunda seccion Contacto-->
     
+
+  </main>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
@@ -44,6 +115,8 @@
     $( document ).ready(function(){
       $(".button-collapse").sideNav();
       $(".dropdown-button").dropdown();
+
+          $('.slider').slider({height:250});
     })
   </script>
 </body>
