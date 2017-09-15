@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/icon.woff2) format('woff2');
 }
 
@@ -20,4 +20,19 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+}
+#sidenav-overlay{
+  z-index: 0;
+}
+nav ul a:hover{
+  background:orange;
+  color: black;
+}
+
+.extra,forma{
+  margin-top:px 
+}
+.parallax-container{
+  height: 250px;
+  
 }

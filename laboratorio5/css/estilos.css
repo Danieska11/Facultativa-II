@@ -1,16 +1,14 @@
-/* fallback */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/icon.woff2) format('woff2');
 }
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 12px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -21,14 +19,28 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+button{
+    border-radius: 50px;
+    font-size: 1.2em;
+    height: 3em;
+    width: 250px;
+    background:rebeccapurple;
+}
+ 
 
-#sidenav-overlay
-{
+#sidenav-overlay{
   z-index: 0;
 }
-
-nav ul a:hover
-{
-  background: #bbdefb;
-  color: black;
+nav ul a:hover{
+background: purple lighten-4;
+color:purple
+}
+.juan{
+  text-decoration: purple
+}
+.extra,forma{
+  margin-top:px 
+}
+.parallax-container{
+  height: 250px;
 }

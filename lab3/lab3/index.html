@@ -10,11 +10,227 @@
     
 </head>
 <body>
+   <!--menu responsivo-->
+  <div class="navbar-fixed">
+    <nav class="black accent-3">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Keylin Lopez</a>
+        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contactos</a></li>
+          <li><a href="#">Noticias</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contactos</a></li>
+          <li><a href="#">Noticias</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
+  <!--Slider de imagenes-->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/imagen1.jpg" alt=""> <!-- random image -->
+          <div class="caption center-align">
+            <h3>Etiquetas HTML</h3>
+            <h5 class="light grey-text text-lighten-3">Contenidos de mayor diseño</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/imagen2.jpg" alt=""> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Framework de edicion</h3>
+            <h5 class="light grey-text text-lighten-3">Nos permiten mejor interactividad</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/imagen3.jpg" alt=""> <!-- random image -->
+          <div class="caption right-align">
+            <h3>CSS y Java script</h3>
+            <h5 class="light grey-text text-lighten-3">Para mejorar tus sitios web</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/imagen4.jpg" alt=""> <!-- random image -->
+          <div class="caption center-align">
+            <h3></h3>
+            <h5 class="light grey-text text-lighten-3">Estudiante en aprendizaje de Html y Java script.</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+     
+
+
+  <!--inicio del contenido main-->
+  <main>
+    <!--seccion de servicios-->
+    <section class="row">
+      <h2 class="center-align red-text">Servicios</h2>
+      <p class="center-align orange">Estos son nuestros servicios para usted</p>
+      <!-- primer articulo una columna-->
+        <article class='col s12 m4'>
+          <div class='icon-block'>
+            <h2 class='center light-blue-text'><img width='30%' src='img/icon/computer.png' alt=''></h2>
+            <h5 class='center blue-text'>Desarrollo WEb</h5>
+            <p class='light'>Uso de herramientas para un sitio responsibo usando materialize y css.</p>
+          </div>
+        </article>  
+
+              <!-- Segundo articulo una columna-->
+        <article class='col s12 m4'>
+          <div class='icon-block'>
+            <h2 class='center light-blue-text'><img width='30%' src='img/icon/floppy.png' alt=''></h2>
+            <h5 class='center blue-text'>Responsibidad</h5>
+            <p class='light'>Haz que tu sitio web se vea en cualquier movil.</p>
+          </div>
+        </article> 
+
+              <!-- tercer articulo una columna-->
+        <article class='col s12 m4'>
+          <div class='icon-block'>
+            <h2 class='center light-blue-text'><img width='30%' src='img/icon/tablet.png' alt=''></h2>
+            <h5 class='center blue-text'>Despliegue de imagenes</h5>
+            <p class='light'>utilizamos github para el despliegue de imangenes.</p>
+          </div>
+        </article> 
+    </section>
   
+  
+<!--Segunda secciom -->
+<section class = "row">
 
+ <h2 class="center-align">Contactos</h2>
+ <h5 class="center-aling-black-text">Enviamos tu opinion</h5>
+<!--Columna de Formulario-->
+  <article class="extra col s12 m6 l6">  
+    <h6 class="center-aling">Rellene los campos</h6> 
+    <hr>
 
+<form action="">
+  <div class="input-field col s12 ">
+    <i class="material-icons prefix  red-text">account_circle</i>
+    <input type="text" id="icon_prefix" class="validate">
+    <label for="first_name">Nombre Completo</label>
+  </div>
+
+  <div class="input-field col s12">
+     <i class="material-icons prefix red-text ">contact_mail</i>
+    <input type="email" id="icons_prefix" class="validate">
+    <label for="email" data-error="wrong" data-success="right">Correro Electronico</label>
+  </div>
+  <div class="input-field col s12">
+     <i class="material-icons prefix red-text">chat</i>
+    <textarea id="icons_prefix" class="materialize-textarea"></textarea>
+    <label for="textarea1">Comentario</label>
+  </div>
+  <button class="btn waves-effect waves-light red" type="submit" name="action">Enviar
+    <i class="material-icons right">send</i>
+  </button>
+</form>
+<!--Columna de informacion--> 
+  </article class="forma col s12 m6 l6">
+  <h4 class="center-align"> Informacion</h4>
+  <ul>
+    <li>Direccion: <p class="blue-text">Gasolinera puma 800 metros al oeste</p></li>
+    <li>Direccion: <p class="blue-text">proyectoweb@gmail.com</p></li>
+    <li>Direccion: <p class="orenge-text"> (505)25122694</p></li>
+  </ul>
+  </article>
+</section>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="img/imagen1.jpg"></div>
+</div>
+
+  <section class="row">
+    <!--seccion de noticias-->
+     <h2 class="center-align">Noticias Relevantes</h2>
+     <h5 class="center-aling-black-text">Ven y descuble lo mejor en tecnologia</h5>
+<!--cartas de contenido mz-card-->
+     <article class="col s12 m3 l3">
+       <div class="card">
+         <div class="card-image">
+           <img src="img/imagen1.jpg" alt=""/>
+           <span class="card-title"></span>
+         </div>
+         <div class="card-content">
+           <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+         </div>
+         <div class="card-action">
+           <a href="#">Ver notcia1</a>
+         </div>
+       </div>
+
+     </article>
+
+     <article class="col s12 m3 l3">
+             <div class="card">
+         <div class="card-image">
+           <img src="img/imagen2.jpg" alt=""/>
+           <span class="card-title"></span>
+         </div>
+         <div class="card-content">
+           <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+         </div>
+         <div class="card-action">
+           <a href="#">Ver noticia 2</a>
+         </div>
+       </div>
+     </article>
+
+     <article class="col s12 m3 l3">
+             <div class="card">
+         <div class="card-image">
+           <img src="img/imagen3.jpg" alt=""/>
+           <span class="card-title"></span>
+         </div>
+         <div class="card-content">
+           <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+         </div>
+         <div class="card-action">
+           <a href="#">Ver noticia 3</a>
+         </div>
+       </div>
+     </article>
+
+     <article class="col s12 m3 l3">
+             <div class="card">
+         <div class="card-image">
+           <img src="img/imagen4.jpg" alt=""/>
+           <span class="card-title"></span>
+         </div>
+         <div class="card-content">
+           <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+         </div>
+         <div class="card-action">
+           <a href="#">Ver noticia 4</a>
+         </div>
+       </div>
+     </article>
+  </section>
     
+  <section>
+
+  </section>
+
+    </main>
+
+    <!-- pie de pagina mz-footer-->
+    <footer class="grey darken-4 page-footer">
+      <div class="footer-copyright">
+        <div class="container center">
+          © 2017 keylin Danieska  Lopez Obando
+        </div>
+      </div>
+    </footer> 
 
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
@@ -23,7 +239,11 @@
     $( document ).ready(function(){
       $(".button-collapse").sideNav();
       $(".dropdown-button").dropdown();
+       $('.slider').slider({heigth:250});
+       $('.parallax').parallax();
+
     })
+     
   </script>
 </body>
 </html>
