@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>App Ganancia Ahorro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">  
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    
+</head>
+<body class="black">
+  <section class="container"> 
+    <article class="row">
+      <div class="col s10 push-s1"> <!--el push-s2 es para quitar para que quede centrado-->
+        <h1 class="center-align white-text">Ganancias ahorro</h1>
+        <input type="number"  placeholder="Escribir monto C$"  name="" id="monto">
+        <button>1 Año CDP</button>
+        <button>2 Año CDP</button>
+        <div class="card blue">
+          <div class="card-content white-text">
+            <span class="card-title center-align">Ganancia Mensual</span>
+            <hr>
+            <h5>Interes: <span id="interesm"></span> </h5>
+            <h5>Revalorización: <span id="revm"></span>  </h5>
+            <h5>Total: <span id="totalm"></span></h5>
+          </div>
+          
+        </div>
+
+        <div class="card green">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Ganancia Anual</span>
+              <hr>
+              <h5>Interes: <span id="interes"></span> </h5>
+              <h5>Revalorización: <span id="rev"></span>  </h5>
+              <h5>Total: <span id="total"></span></h5>
+            </div>
+            
+          </div>
+        </div>
+
+    </article>
+  </section>
+
+  <footer class="center-align">
+    <h6 class="white-text">Interes (2%) y revalorización (5%)</h6>
+
+  </footer>
+ 
+
+       
+           
+           
+
+        
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+
+  
+</body>
+</html>  
