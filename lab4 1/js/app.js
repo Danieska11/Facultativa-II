@@ -18,7 +18,7 @@ document.getElementById('monto').addEventListener('input', function (e) {
    document.getElementById('interesm').innerHTML=((m*0.02)%12).toFixed(2);
     document.getElementById('revm').innerHTML=((m*0.05)/12).toFixed(2);
 
-document.getElementById('cdp1m').innerHTML=((m*4.88)*100%12).toFixed(2);
+document.getElementById('cdp2m').innerHTML=((m*4.88)*100%12).toFixed(2);
 document.getElementById('interesm').innerHTML=((m*0.02)%12).toFixed(2);
 document.getElementById('revm').innerHTML=((m*0.05)/12).toFixed(2);
 
